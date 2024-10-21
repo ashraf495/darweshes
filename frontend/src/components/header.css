@@ -1,0 +1,81 @@
+/* src/components/header.css */
+.app-header {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  direction: rtl;
+  height: 40px;  /* You can adjust the height based on your design */
+}
+
+.app-header .logo {
+  font-family: 'Tajawal', sans-serif; /* Use Tajawal Arabic font */
+  font-size: 1em; /* Slightly smaller font size */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px; /* Reduced padding to 5px 5px */
+  margin-right: 60px;
+}
+
+.app-header .logo:hover {
+  background-color: #FFD700; /* Gold hover background */
+  color: black;
+  transform: scale(1.02); /* Subtle scale effect */
+  border-radius: 5px; /* Smaller border radius to match the padding */
+}
+
+
+.app-header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header nav ul li {
+  margin-left: 20px;
+}
+
+.app-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 5px 5px;
+  font-family: 'Tajawal', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 1cm;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.app-header nav ul li a:hover {
+  background-color: #FFD700; /* Gold hover background */
+  color: black; /* Black text on hover */
+  padding: 5px 5px; 
+  border-radius: 1cm;
+}
+
+.app-header nav ul li a.active-link {
+  background-color: #FFD700; /* Highlight in yellow */
+  color: black;
+  padding: 5px 5px; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 1cm;
+}
+
+
+.main-content {
+  text-align: right; /* Aligns text to the right */
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 2.5em;
+  color: #333; /* Darker color for the welcome message */
+}

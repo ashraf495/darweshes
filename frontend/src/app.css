@@ -1,0 +1,44 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Disable scrolling for the whole page */
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.app-header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure header stays on top */
+}
+
+.app-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure footer stays on top */
+  height: 150px; /* Set the height of the footer */
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto; /* Scrollbar only for the main content */
+  padding-top: 60px; /* Space for the fixed header */
+  padding-bottom: 170px; /* Space for the fixed footer */
+  height: calc(100vh - 210px); /* Adjust the height dynamically */
+}
