@@ -31,7 +31,7 @@ const Resellers = () => {
 
   // Fetch distributor list from backend on component mount
   useEffect(() => {
-    axios.get('http://192.168.10.61:5000/api/distributors')
+    axios.get('http://localhost:5000/api/distributors')
       .then(response => {
         const distributorOptions = response.data.map(distributor => ({
           value: distributor.distributorId,
@@ -74,7 +74,7 @@ const Resellers = () => {
     if (distributorId) {
       const formattedDate = format(history, 'yyyy-MM-dd');
       try {
-        const response = await axios.get(`http://192.168.10.61:5000/api/distributors/${distributorId}/operations?history=${formattedDate}`);
+        const response = await axios.get(`http://localhost:5000/api/distributors/${distributorId}/operations?history=${formattedDate}`);
         setSalesData(response.data);
         setMessage('');
       } catch (error) {
@@ -91,7 +91,7 @@ const Resellers = () => {
     if (distributorId && history) {
       const formattedDate = format(history, 'yyyy-MM-dd');
       try {
-        const response = await axios.post('http://192.168.10.61:5000/api/distributors/generate-xlsx', {
+        const response = await axios.post('http://localhost:5000/api/distributors/generate-xlsx', {
           distributorId,
           history: formattedDate,
           salesData,

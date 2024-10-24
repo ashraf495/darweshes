@@ -41,7 +41,7 @@ const Customers = () => {
 
   // Fetch item names from control page
   useEffect(() => {
-    axios.get('http://192.168.10.61:5000/api/items')
+    axios.get('http://localhost:5000/api/items')
       .then(response => {
         setItemOptions(response.data.map(item => ({
           value: item.id,
@@ -53,7 +53,7 @@ const Customers = () => {
 
   // Fetch distributor options and customer options from backend on component mount
   useEffect(() => {
-    axios.get('http://192.168.10.61:5000/api/distributors')
+    axios.get('http://localhost:5000/api/distributors')
       .then(response => {
         setDistributorOptions(response.data.map(distributor => ({
           value: distributor.distributorId,
@@ -64,7 +64,7 @@ const Customers = () => {
   }, []);
   
   useEffect(() => {
-    axios.get('http://192.168.10.61:5000/api/customers')
+    axios.get('http://localhost:5000/api/customers')
       .then(response => {
         setCustomerOptions(response.data.map(customer => ({
           value: customer.customerId,
@@ -78,7 +78,7 @@ const Customers = () => {
   useEffect(() => {
     if (customerId && history) {
       const formattedDate = format(history, 'yyyy-MM-dd');
-      axios.get(`http://192.168.10.61:5000/api/customers/${customerId}/accumulated?date=${formattedDate}`)
+      axios.get(`http://localhost:5000/api/customers/${customerId}/accumulated?date=${formattedDate}`)
         .then(response => {
           const customerData = response.data;
           setTotalBoxes(customerData.totalBoxCount || 0);
@@ -144,8 +144,8 @@ const Customers = () => {
     setOperations(prevOps => [...prevOps, currentOperation]);
 
     try {
-      await axios.post(`http://192.168.10.61:5000/api/customers/${customerId}/operations`, currentOperation);
-      await axios.put(`http://192.168.10.61:5000/api/customers/${customerId}/accumulate?date=${formattedDate}`, {
+      await axios.post(`http://localhost:5000/api/customers/${customerId}/operations`, currentOperation);
+      await axios.put(`http://localhost:5000/api/customers/${customerId}/accumulate?date=${formattedDate}`, {
         totalWeight: newTotalWeight,
         totalBoxCount: newTotalBoxes,
         totalPrice: newTotalPrice

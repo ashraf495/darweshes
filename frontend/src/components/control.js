@@ -39,7 +39,7 @@ const Control = () => {
     };
 
     try {
-      const response = await axios.post('http://192.168.10.61:5000/api/customers', customerData);
+      const response = await axios.post('http://localhost:5000/api/customers', customerData);
       setMessage1('تم إدخال بيانات العميل بنجاح!');
       console.log('Customer added:', response.data);
 
@@ -68,7 +68,7 @@ const Control = () => {
     };
 
     try {
-      const response = await axios.post('http://192.168.10.61:5000/api/distributors', distributorData);
+      const response = await axios.post('http://localhost:5000/api/distributors', distributorData);
       setMessage2('تم إدخال بيانات الموزع بنجاح!');
       console.log('Distributor added:', response.data);
 
@@ -96,7 +96,7 @@ const Control = () => {
     };
 
     try {
-      const response = await axios.post('http://192.168.10.61:5000/api/items', itemData);
+      const response = await axios.post('http://localhost:5000/api/items', itemData);
       setMessage3('تم إدخال بيانات الصنف بنجاح!');
       console.log('Item added:', response.data);
 
