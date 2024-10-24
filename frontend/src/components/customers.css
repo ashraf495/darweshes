@@ -1,0 +1,189 @@
+  .customers-page {
+    padding: 20px;
+    max-width: 1300px; /* Widen the panel */
+    margin: 0 auto;
+    background-color: rgba(166, 180, 174, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    height: auto; /* Let the height adjust dynamically based on content */
+  }
+  
+  .customers-page .react-select__control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .header-name {
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap; /* Allow fields to wrap */
+    justify-content: space-between; /* Spread out the fields */
+    gap: 20px;
+  }
+  
+  .form-group {
+    flex: 1 1 calc(33.33% - 20px); /* Make the fields flexible and responsive */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-size: x-large;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    color: black;
+    
+  }
+  
+  .form-group input, 
+  .form-group select {
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    color: black;
+  }
+  
+  .form-group.full-width {
+    flex: 1 1 100%; /* Make specific fields full-width */
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #6B0411;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+    font-family: 'Tajawal', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #854239;
+    font-family: 'Tajawal', sans-serif;
+    font-size: larger;
+    
+  }
+  
+  .total-result {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  .operations-list {
+    margin-top: 40px;
+  }
+  
+  .operations-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .operations-list ul li {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+.full-width {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .full-width .form-group {
+    flex: 1;
+    margin-right: 15px;
+  }
+  
+  /* Styles for other rows */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .row .form-group {
+    flex: 1;
+    margin-right: 15px;
+  }
+  
+  /* Ensure all inputs and selects have equal widths */
+  .form-group input,
+  .form-group .css-2b097c-container {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Fading line */
+  .fading-line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    margin-bottom: 20px;
+  }
+  
+  /* Button and message styling */
+  button {
+    display: block;
+    width: 100%;
+    background-color: #8b0000;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .message {
+    color: green;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+/* This class will add a large margin between the two panels */
+.panel-separator {
+    margin-top: 80px; /* Space between the two panels */
+    margin-bottom: 80px;
+  }
+.message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+.centered-large-message {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #854239;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #854239;
+    border-radius: 5px;
+    background-color: #E8F5E9; /* Light green background */
+  }
+
+  

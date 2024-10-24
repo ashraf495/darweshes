@@ -1,0 +1,53 @@
+/* src/components/footer.css */
+.app-footer {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 0;
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+}
+
+.image-slider {
+  position: relative;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;  /* Hide overflowing content */
+}
+
+.slider-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Add this new class */
+.slide-active {
+  animation: slide 4s ease-in-out;  /* Apply the sliding animation for 4 seconds */
+}
+
+.slider-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  animation: slide 4s ease-in-out infinite;  /* 4-second total animation */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(400%);  /* Start just off-screen on the right */
+  }
+  10% {
+    transform: translateX(0%);  /* Move quickly to the center */
+  }
+  70% {
+    transform: translateX(0%);  /* Stay in the center for 2 seconds */
+  }
+  100% {
+    transform: translateX(-400%);  /* Stay off-screen to the left */
+  }
+}

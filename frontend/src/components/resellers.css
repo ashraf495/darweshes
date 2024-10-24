@@ -1,0 +1,135 @@
+.resellers-page {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: rgba(51, 75, 54, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.reseller-name {
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: white !important;
+}
+
+/* Panel Styling */
+.panel {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: rgba(166, 180, 174, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.panel-header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: larger;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+
+.form-group select,
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #6B0411;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #854239;
+}
+
+.message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sales-table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.sales-table th,
+.sales-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.sales-table th {
+    background-color: #6B0411;
+    color: white;
+}
+
+.sales-table td {
+    background-color: #f9f9f9;
+}
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th, .results-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+
+.results-table th {
+    background-color: #6B0411;
+    color: white;
+    font-weight: bold;
+}
+
+.results-table td {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.results-table caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Tajawal', sans-serif;
+    text-align: center;
+}
+

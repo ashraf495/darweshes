@@ -1,0 +1,88 @@
+.control-page {
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: rgba(51, 75, 54, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.control-name {
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color:white !important;
+}
+
+/* Styling for the panel */
+.panel {
+    margin-bottom: 40px;
+    padding: 30px;
+    background-color: rgba(166, 180, 174, 0.9); /* Fady background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+}
+
+.panel-header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-size: larger;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: larger;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px 30px;
+    background-color: #6B0411;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #854239;
+}
+
+.message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
